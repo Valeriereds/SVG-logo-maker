@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 // needed to call to write to file
 const fs = require('fs');
 // needed to import the generated shapes
-const shapes = require('./utils/generateShapes');
+const {Triangle, Circle, Square} = require('./utils/generateShapes');
 // so variable needed for each shape? or just the generated page?
 
 function promptMe() {
