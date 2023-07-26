@@ -32,7 +32,7 @@ function promptMe() {
     }
   ])
   .then((response) =>
-  writeToFile((response))
+  writeToFile("logo.svg"(response))
   );
 }
 
