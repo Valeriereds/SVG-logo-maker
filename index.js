@@ -17,7 +17,7 @@ function asYouWish(deFileMe, response) {
     randySvg += `<circle cx="150" cy="100" r="80" fill="${response.bgColor}"/>`;
   } else if (response.shapes === 'Square') {
     shapeMe = new Square();
-    randySvg += `<rect x="10" y="10" width="30" height="30" fill="${response.bgColor}"/>`;
+    randySvg += `<rect x="100" y="50" width="100" height="100" fill="${response.bgColor}"/>`;
     } else if (response.shapes === 'Triangle') {
       shapeMe = new Triangle;
       randySvg += `<polygon points="150, 18 244, 182 56, 182" fill="${response.bgColor}"/>`;
