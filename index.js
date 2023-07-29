@@ -3,8 +3,11 @@ const inquirer = require('inquirer');
 // needed to call to write to file
 const fs = require('fs');
 // needed to import the generated shapes
-const {Triangle, Circle, Square} = require('./utils/generateShapes');
+const { Triangle, Circle, Square } = require('./utils/generateShapes');
 // so variable needed for each shape? or just the generated page?
+// need to generate the svg
+// need to take the response, if the user chooses circle, need a new circle class constructor. Conditional statement (if/else) to generate shapes based on their answers.
+
 
 function promptMe() {
   inquirer
@@ -36,3 +39,4 @@ function promptMe() {
   );
 }
 
+promptMe()
