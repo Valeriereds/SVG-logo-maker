@@ -14,19 +14,18 @@ function asYouWish(deFileMe, response) {
 
   if (response.shapes === 'Circle') {
     shapeMe = new Circle();
-    randySvg += `<circle cx="25" cy="75" r="20" fill=${response.bgColor}>`;
+    randySvg += `<circle cx="150" cy="100" r="80" fill="${response.bgColor}"/>`;
   } else if (response.shapes === 'Square') {
     shapeMe = new Square();
     randySvg += `<rect x="10" y="10" width="30" height="30" fill="${response.bgColor}"/>`;
     } else if (response.shapes === 'Triangle') {
       shapeMe = new Triangle;
-      randySvg += `<polygon points="150, 18 244, 182 56, 182" fill="${response.bgColor}" />`;
-    } else  {
+      randySvg += `<polygon points="150, 18 244, 182 56, 182" fill="${response.bgColor}"/>`;
+    } else {
       console.log("Don't be a square, choose a shape!");
     }
-    console.log(shapeMe)
 
-    randySvg += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${response.textColor}">${response.initials}</text></svg>`;
+    randySvg += `<text x="150" y="120" text-anchor="middle" font-size="40" fill="${response.textColor}">${response.initials}</text></svg>`;
 
     fs.writeFile(deFileMe, randySvg, (err) => {
       err ? console.log(err) : console.log("It's Aliveeeeeee!");
